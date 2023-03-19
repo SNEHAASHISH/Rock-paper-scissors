@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8>" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <title>RPS Game - Sneh</title>
+  </head>
+  <body>
+    <div>
+        <div class="container">
+            <header class="header">
+                <img src="./images/logo.svg" alt="logo" class="logo">
+                <div class="score">
+                    <div class="score__title">COMPUTER <br> SCORE</div>
+                    <div class="comp__score__number">0</div>
+                </div>
+                <div class="score">
+                    <div class="score__title">YOUR <br> SCORE</div>
+                    <div class="your__score__number">0</div>
+                </div>
+            </header>
+            <section class="game">
+                <button class="choice-btn" data-choice="paper">
+                    <div class="choice paper">
+                        <img src="./images/icon-paper.svg" alt="paper">
+                    </div>
+                </button>
+                <button class="choice-btn" data-choice="scissors">
+                    <div class="choice scissors">
+                        <img src="./images/icon-scissors.svg" alt="scissors">
+                    </div>
+                </button>
+                <button class="choice-btn" data-choice="rock">
+                    <div class="choice rock">
+                        <img src="./images/icon-rock.svg" alt="rock">
+                    </div>
+                </button>
+            </section>
+        </div>
+        <secion class="results hidden">
+            <h2 class="results_heading">YOU PICKED</h2>
+            <h2 class="results_heading">PC PICKED</h2>
+            <div class="results__result"></div>
+            <div class="results__winner hidden">
+                <h3 class="results__text"></h3>
+                <button class="play-again">PLAY AGAIN</button>
+            </div>
+            <div class="results__result"></div>
+        </secion>
+        <button class="rules-btn" tabindex="1" id="rules-btn">RULES</button>
+        <button class="next hidden">NEXT</button>
+        <div class="modal">
+            <div class="modal__container">
+                <header class="modal__header">
+                    <h2 class="modal__heading">Rules</h2>
+                    <button class="close-btn">
+                        <img src="./images/icon-close.svg" alt="Close Button">
+                    </button>
+                </header>
+                <img src="./images/image-rules.svg" alt="Rules Image" class="rules-img">
+            </div>
+        </div>
+    </div>
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>
